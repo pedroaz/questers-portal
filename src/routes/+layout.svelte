@@ -5,7 +5,7 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
-	import AppSidebar from '$lib/components/app-sidebar/app-sidebar.svelte';
+	import AppSidebar from './app-sidebar.svelte';
 
 	export const load = async () => {
 		if (browser) {
@@ -29,8 +29,8 @@
 
 <Sidebar.Provider>
 	<AppSidebar />
-	<main class="w-full">
-		<Sidebar.Trigger />
+	<main class="">
+		<!-- <Sidebar.Trigger /> -->
 		<div class="w-full">
 			{@render children?.()}
 		</div>
