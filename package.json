@@ -11,7 +11,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"test": "npx cypress open"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -24,6 +25,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@tailwindcss/typography": "^0.5.15",
 		"@tailwindcss/vite": "^4.0.0",
+		"@types/jest": "^30.0.0",
 		"@types/node": "^24.0.4",
 		"bits-ui": "^2.8.8",
 		"clsx": "^2.1.1",
