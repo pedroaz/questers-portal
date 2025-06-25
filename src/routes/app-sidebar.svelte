@@ -42,6 +42,10 @@
 			open: true,
 			items: [
 				{
+					title: 'Architecture',
+					url: '/info/development/architecture'
+				},
+				{
 					title: 'Dev Stack',
 					url: '/info/development/dev-stack'
 				},
