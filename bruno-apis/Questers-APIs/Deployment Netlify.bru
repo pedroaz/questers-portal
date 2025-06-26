@@ -1,0 +1,11 @@
+meta {
+  name: Deployment Netlify
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.netlify.com/api/v1/sites/YOUR_SITE_ID/deploys
+  body: none
+  auth: inherit
+}
